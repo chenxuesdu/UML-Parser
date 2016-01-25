@@ -1,0 +1,8 @@
+if [ $# != 2 ]; then
+    echo "Usage: umlparse <classpath> <output file name>"
+    exit
+fi
+INPUT_FILENAME=$1
+OUTPUT_FILENAME=$2
+
+java -jar umlparser.jar $INPUT_FILENAME $OUTPUT_FILENAME
